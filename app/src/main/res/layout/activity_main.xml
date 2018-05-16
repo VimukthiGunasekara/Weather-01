@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+
+    android:orientation="vertical"
+    tools:context="com.example.vimukthigunasekara.weather02.MainActivity">
+
+    <EditText
+        android:id="@+id/cityname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="City name"
+        />
+    <Button
+        android:id="@+id/bycityname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call current weather by city name"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.03">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/all" />
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
